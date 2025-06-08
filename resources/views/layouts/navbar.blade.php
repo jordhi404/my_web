@@ -1,5 +1,5 @@
 <nav class="bg-white shadow p-4 flex justify-between">
-    <div class="font-bold text-xl">My Portfolio</div>
+    <div class="font-bold text-xl">Jordhi Tejo Saputro</div>
     <ul class="flex gap-4">
         <li><a href="/" class="hover:underline">Home</a></li>
         <li><a href="/about" class="hover:underline">About</a></li>

@@ -6,7 +6,8 @@
         "dev": "vite"
     },
     "devDependencies": {
-        "@tailwindcss/vite": "^4.0.0",
+        "@tailwindcss/vite": "^4.1.8",
+        "@vitejs/plugin-react": "^4.5.1",
         "autoprefixer": "^10.4.21",
         "axios": "^1.8.2",
         "concurrently": "^9.0.1",
@@ -16,7 +17,21 @@
         "vite": "^6.2.4"
     },
     "dependencies": {
-        "react": "^19.1.0",
-        "react-dom": "^19.1.0"
-    }
+        "@inertiajs/inertia-react": "^0.8.1",
+        "@inertiajs/progress": "^0.1.2",
+        "@inertiajs/react": "^2.0.11",
+        "framer-motion": "^12.16.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "name": "my_web",
+    "version": "1.0.0",
+    "description": "<p align=\"center\"><a href=\"https://laravel.com\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg\" width=\"400\" alt=\"Laravel Logo\"></a></p>",
+    "main": "vite.config.js",
+    "directories": {
+        "test": "tests"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
 }
