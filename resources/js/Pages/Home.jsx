@@ -5,45 +5,83 @@ import MotionWrapper from "@/Layouts/MotionWrapper";
 
 export default function Home() {
     return (
-        <MotionWrapper>
-            <MainLayout>
-                <Head title="Home" />
-                
+        <MainLayout>
+            <MotionWrapper>
+                <Head title="Home" />                
                 {/* Hero Section */}
-                <section id="home" className="pt-36">
-                    <div className="container">
-                    <div className="flex flex-wrap items-center px-4">
-                        {/* Kiri: Teks */}
-                        <div className="w-full md:w-1/2 mb-10 md:mb-0">
-                        <h1 className="text-base font-semibold text-rose-500 mb-2">
-                            Hi 👋 saya
-                            <span className="block font-bold text-dark-500 text-4xl mt-1">Jordhi Tejo Saputro</span>
-                        </h1>
-                        <h2 className="font-medium text-slate-500 text-lg mb-5">
-                            Fullstack web developer & Junior programmer
-                        </h2>
-                        </div>
+                <section id="home" className="pt-34">
+                    <div className="container max-w-7xl px-4 mx-auto">
+                        <div className="flex flex-wrap items-center px-4 mb-10">
+                            {/* Kiri: Teks */}
+                            <div className="w-full lg:w-1/2 mb-10 md:mb-0">
+                                <h1 className="text-3xl font-semibold text-rose-500 mb-2">
+                                    Hi 👋 saya
+                                    <span className="block font-bold text-slate-900 text-5xl mt-1">Jordhi Tejo Saputro</span>
+                                </h1>
+                                <h2 className="font-medium text-slate-500 text-lg mb-5 lg:text-2xl">
+                                    Fullstack web developer & Junior programmer
+                                </h2>
 
-                        {/* Kanan: Foto + Blob */}
-                        <div className="w-full md:w-1/2 flex justify-center">
-                        <div className="relative w-60 h-60">
-                            {/* Blob Background */}
-                            {/* <span className="absolute inset-0 -z-10 flex items-center justify-center">
-                                <svg width="100%" height="100%" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="#FF0066" d="M40.3,-47.8C50.1,-39.8,54.4,-25.1,58.4,-9.3C62.3,6.4,65.8,23.2,60.6,37.5C55.3,51.7,41.3,63.3,25.3,68.8C9.4,74.2,-8.5,73.5,-21.1,65.6C-33.7,57.8,-41,42.8,-52.7,27.9C-64.3,12.9,-80.4,-2.1,-78.3,-13.7C-76.2,-25.4,-55.8,-33.8,-39.7,-40.7C-23.6,-47.6,-11.8,-53,1.7,-55C15.2,-57,30.5,-55.7,40.3,-47.8Z" transform="translate(100 100) scale(1.2)" />
-                                </svg>
-                            </span> */}
+                                {/* Hubungi saya */}
+                                <a href="#" className='text-base font-semibold text-white bg-rose-500 py-3 px-8 rounded-full hover:shadow-lg hover:bg-rose-600 hover:opacity-80 transition duration-300 ease-in-out'>Contact Me!</a>
+                            </div>
 
-                            <img src="/img/blob.svg" alt="blob" className='h-full w-full absolute inset-0 z-10 flex items-center justify-center'/>
+                            {/* Kanan: Foto + Blob */}
+                            <div className="w-full self-end px-4 lg:w-1/2">
+                                <div className="relative w-100 h-100 mt-10 lg:right-0">
+                                    {/* Blob Background */}
+                                    <img src="/img/blob.svg" alt="blob" className='h-full w-full absolute inset-0 z-10 flex items-center justify-center'/>
 
-                            {/* Foto */}
-                            <img src="/img/Jordhi-glasses.png" alt="Jordhi" className="h-full w-full object-contain relative z-10" />
+                                    {/* Foto */}
+                                    <img src="/img/Jordhi-glasses.png" alt="Jordhi" className="h-full max-w-full object-contain relative z-10 mx-auto" />
+                                </div>
+                            </div>
                         </div>
-                        </div>
-                    </div>
                     </div>
                 </section>
-            </MainLayout>
-        </MotionWrapper>
+
+                {/* About Section */}
+                <section className='pt-36 pb-32' id='about'>
+                    <div className="container max-w-7xl px-4 mx-auto">
+                        <div className="flex flex-wrap">
+                            <div className='w-full px-4 mb-10 lg:w-1/2'>
+                                <h4 className='font-bold uppercase text-2xl text-rose-500 mb-4 lg:text-3xl lg:pt-0'>Tentang Saya</h4>
+                                <p className='font-medium text-slate-500 text-base max-w-xl lg:text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                            <div className='w-full px-4 lg:w-1/2'>
+                                <h3 className='font-semibold text-black text-2xl mb-4 lg:text-3xl lg:pt-0'>Mari berteman!</h3>
+                                <p className='font-medium text-base text-slate-500 mb-6 lg:text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div className='flex items-center'>
+                                    {/* LinkedIn */}
+                                    <a href="https://www.linkedin.com/in/jordhi-tejo-saputro" target='blank' className='w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-100 hover:border-rose-500 hover:bg-rose-500 hover:text-white'>
+                                        <img src="img/linkedin.png" alt="LinkedIn" width={25}/>
+                                    </a>
+                                    {/* Github */}
+                                    <a href="https://github.com/jordhi404" target='blank' className='w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-100 hover:border-rose-500 hover:bg-rose-500 hover:text-white'>
+                                        <img src="img/github.svg" alt="Github" width={25}/>
+                                    </a>
+                                    {/* Instagram */}
+                                    <a href="https://www.instagram.com/jordhii_404" target='blank' className='w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-100 hover:border-rose-500 hover:bg-rose-500 hover:text-white'>
+                                        <img src="img/instagram.svg" alt="Instagram" width={25}/>
+                                    </a>
+                                    {/* Gmail */}
+                                    <a href="https://mail.google.com/mail/?view=cm&to=tejosaputro22@gmail.com" target='blank' className='w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-100 hover:border-rose-500 hover:bg-rose-500 hover:text-white'>
+                                        <img src="img/gmail.svg" alt="Gmail" width={25}/>
+                                    </a>
+                                    {/* Whatsapp */}
+                                    <a href="https://wa.me/6281226057642" target='blank' className='w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-100 hover:border-rose-500 hover:bg-rose-500 hover:text-white'>
+                                        <img src="img/whatsapp.svg" alt="Whatsapp" width={25}/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </MotionWrapper>
+        </MainLayout>
     );
 }
