@@ -7,7 +7,6 @@ export default function About() {
     return (
         <MainLayout>
             <Head title="About Me" />
-
             <MotionWrapper>
                 <h1 className="text-3xl font-bold mb-4">About Me</h1>
                 <div className="container">

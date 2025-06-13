@@ -6,8 +6,8 @@ import MotionWrapper from '../Layouts/MotionWrapper';
 export default function Projects({ projects }) {
     return (
         <MainLayout>
+            <Head title="My Projects" />
             <MotionWrapper>
-                <Head title="My Projects" />
 
                 <div className="max-w-5xl mx-auto px-4 py-10">
                     <h1 className="text-3xl font-bold text-gray-800 mb-8 text-center">My Projects</h1>

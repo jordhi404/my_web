@@ -6,8 +6,8 @@ import MotionWrapper from '../Layouts/MotionWrapper';
 export default function Contact() {
   return (
     <MainLayout>
+      <Head title="Contact Me" />
       <MotionWrapper>
-        <Head title="Contact Me" />
           <h1 className="text-3xl font-bold mb-4">Hubungi Saya</h1>
           <form className="space-y-4 max-w-md">
               <div>
