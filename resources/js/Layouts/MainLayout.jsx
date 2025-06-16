@@ -7,7 +7,7 @@ export default function MainLayout({ children }) {
     <div className="bg-sky-50 text-gray-900 min-h-screen flex flex-col">
       <Navbar />
 
-      <main className="flex-1 p-5 py-30">
+      <main className="flex-1 p-5 py-20" style={{ backgroundImage: 'url(/img/subtle-prism.png)' }}>
         {children}
       </main>
 
