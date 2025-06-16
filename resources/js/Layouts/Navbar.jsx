@@ -25,7 +25,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`${isFixed ? 'navbar-fixed' : 'absolute'} bg-transparent top-0 left-0 w-full shadow z-10 p-4`}>
+    <nav className={`${isFixed ? 'navbar-fixed' : 'absolute'} bg-white top-0 left-0 w-full shadow z-10 p-4`}>
       <div className="flex justify-between items-center">
         <div className="font-bold text-xl text-rose-500 px-4 py-6">
           JORDHI TEJO SAPUTRO
